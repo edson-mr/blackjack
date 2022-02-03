@@ -1,0 +1,80 @@
+
+:root{
+    --color-header:#2EB086;
+    --color-main:#000;
+    --color-nuevo:#FF6464;
+    --color-second:#548CFF;
+}
+
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: var(--color-header);
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    background-color: var(--color-main);
+    height: calc(100vh - 50px);
+    padding: 1rem;
+}
+
+.main >div{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.main > div button{
+    width: 100px;
+    padding: .4rem .2rem;
+    font-weight: bold;
+    cursor:pointer;
+    border: 0;
+    border-radius: .5rem;
+    margin: .3rem;
+}
+
+.nuevo{
+    background-color: var(--color-nuevo);
+}
+
+.pedir,.detener{
+    background-color: var(--color-second);
+}
+
+h2{
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+article:last-child{
+    margin-top: 1rem;
+}
+
+.carta-jugador{
+    min-height: 150px;
+}
+
+img{
+    width: 100px;
+    height: 160px;
+    position: relative;
+   margin-right: -70px;
+}
